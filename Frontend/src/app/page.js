@@ -4,6 +4,8 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import ProductCard from '@/components/ProductCard';
 import Navbar from '@/components/Navbar';
 
+export const dynamic = 'force-dynamic';
+
 export default function HomePage() {
   const [products, setProducts] = useState([]);
   const [filtered, setFiltered] = useState([]);
