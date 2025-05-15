@@ -57,7 +57,7 @@ export default function ProductForm() {
     }
 
     try {
-      const res = await fetch('http://localhost:5000/api/products', {
+      const res = await fetch('https://quickpick-ma8n.onrender.com/api/products', {
         method: 'POST',
         body: formData,
       });
