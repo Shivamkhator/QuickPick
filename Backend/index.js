@@ -82,6 +82,6 @@ app.post('/api/products', upload.single('image'), async (req, res) => {
   }
 });
 // Start the server
-app.listen(port, () => {
+app.listen('0.0.0.0', () => {
   console.log(`Backend server running on http://localhost:${port}`);
 });
