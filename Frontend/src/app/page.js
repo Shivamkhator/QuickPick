@@ -13,7 +13,7 @@ export default function HomePage() {
   const search = searchParams.get('search') || '';
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/products')
+    fetch('https://quickpick-ma8n.onrender.com/api/products')
       .then(res => res.json())
       .then(data => {
         setProducts(data);
