@@ -1,4 +1,5 @@
 import './globals.css'
+import { Suspense } from 'react'
 
 export const metadata = {
   title: 'QuickPick',
@@ -9,7 +10,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="p-2">
-        {children}
+        <Suspense fallback={<div>Loading...</div>}>
+          {children}
+        </Suspense>
       </body>
     </html>
   )
